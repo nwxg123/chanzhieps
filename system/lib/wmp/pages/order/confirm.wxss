@@ -1,0 +1,23 @@
+/* pages/order/confirm.wxss */
+.order-address {padding: 10px;color: #666;}
+.order-address .address-top {margin-bottom:2px}
+.order-address .right {float: right}
+.cardimage {width:100px;height:100px}
+.cards.condensed .card {padding: 12px 0;overflow: hidden;}
+.card .card-image {margin-top: 10px;width: 100px;height: 100px;text-align: center;overflow: hidden;float: left;}
+.card .card-image > image {vertical-align: middle;margin : auto}
+.card .card-body {padding-left: 110px;}
+.card .card-body .product-title {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 100%;}
+.card .card-body > view {padding: 2px 0px;color: #999;}
+.card .card-body > .card-tap > text {margin-left: 0px;margin-right: 5px; background: #ddd;padding: 0px 3px;}
+.card .btn-update {float: left;height: 24px;width: 24px;border: 1px solid #ddd;text-align: center;line-height: 24px;}
+.card .btn-number {width: 40px;float: left;height: 24px;border: 1px solid #ddd;border-radius: 0px;}
+.card .product-count > text {float: left}
+.product-li {margin-left:10px}
+.alert {padding: 8px 10px;margin-bottom: 10px;border-radius: 2px;}
+textarea.form-control {height: 36px;background: #F3F3F3;border: 0px;width:auto}
+.footer-right {width: 100%;text-align: center;padding-top:12px}
+.footer-right > .right-btn {width: 84px;float: right;margin-right: 12px;}
+.footer-right > .right-btn > input {width: 100%;line-height: 28px;height: 30px;border-radius: 4px;padding: 0px;outline: none;}
+.footer-right > .right-btn > .btn-order-submit {border: 0px solid #6F9AFE;color: #fff;background: linear-gradient(to right,#709BFE,#1B5AFF);}
+.footer-right > .right-total {float: right;margin-right: 12px;margin-top:12px}

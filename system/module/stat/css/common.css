@@ -1,0 +1,87 @@
+.chart-canvas{margin:10px;}
+#switchBar {padding-top:10px;}
+#switchBar label{margin: 0 5px; font-weight:normal; cursor:pointer; color:blue;}
+#switchBar label.active{color:#333; font-weight:bold;}
+
+.btn-toolbar > #switchBar {padding-top:0px}
+
+.table-report{ border:1px solid #ddd !important; }
+#reportData{ margin-top:10px;}
+#reportData thead tr td { font-weight:bold; background:#EFEFEF;}
+
+.table tr td.baidu{background:#FFF0D5;}
+.table tr td.bing{background:#DDF3F5;}
+.table tr td.google{background:#FFFFFF;}
+.table tr td.haosou{background:#FFFFFF;}
+.table tr td.sogou{background:#F5F5F5}
+.pd-l0{padding-left:0}
+
+#typeMenu {padding-right:20px;}
+#typeMenu li a{padding:5px;}
+#typeMenu li.active a{ background:none; color:blue; font-weight:bold;}
+
+.panel-heading{padding-bottom: 9px;}
+.nav-tabs .table{margin-bottom: 0;}
+#typeNav{border-bottom: none;}
+
+.panel-head .panel-body .panel-tag {position:relative}
+.panel-head .panel-body .panel-tag + .panel-tag:before {content:' ';position:absolute;border-left:1px solid #ddd;height:70px;top:20px;left:0}
+.panel-head .panel-body .panel-mtag + .panel-mtag:before {content:' ';position:absolute;border-left:1px solid #ddd;height:70px;top:0;left:0}
+.panel-head .panel-body {overflow:hidden;margin:auto;width:83.33%}
+.panel-head .head-title {margin-bottom:10px}
+.panel-head .today-number {font-size:28px;margin-bottom:10px;line-height:40px}
+.panel-head .yesterday-number {font-size:22px;color:#666;line-height:40px}
+.panel-head small {font-size:14px;position:absolute;left:0}
+
+.panel-nav .panel-body > span {padding:0 15px;display:inline-block}
+.panel-nav .panel-body > span > a {color:#000;font-size:15px}
+.panel-nav .panel-body > span.active > a {color:#7b71ff}
+
+.panel-canvas .chart-canvas {padding:0 100px}
+.panel-canvas .chart-canvas  canvas {width:100%;height:auto}
+.panel-canvas .chart-mcanvas {text-align:center}
+.panel-canvas .chart-mcanvas canvas {width:100%;height:auto;margin:auto}
+.panel-canvas .panel-top {overflow:hidden;padding:0 50px}
+.panel-canvas .panel-top .outline {line-height:14px;margin-left:30px}
+.panel-canvas .panel-top .spot {height:12px;width:12px;border-radius:10px;background-color:#333;display:inline-block;margin-right:8px}
+
+.panel .panel-block {overflow:hidden;margin-bottom:5px}
+
+.widget {overflow:hidden;}
+.widget .panel-widget {overflow:hidden;height:340px}
+.widget .panel.widget-left {float:left;width:49%}
+.widget .panel.widget-right {float:right;width:49%}
+.widget .panel .panel-block > span.pull-left {width:90%}
+
+.main-table.fixed {border-bottom:0}
+.main-table .panel-body {overflow:hidden}
+.main-table .table.table-head > tbody > tr > td {position:relative}
+.main-table .table.table-head > tbody > tr > td + td:before {content:' ';position:absolute;border-left:1px solid #ddd;height:60px;top:35px;left:0}
+.main-table .table > tbody .order-title {font-size:14px;margin-bottom:14px;margin-top:25px}
+.main-table .table > tbody .top-number {font-size:28px;margin-bottom:35px}
+.main-table .search {line-height:39px}
+.main-table .search .input-control.has-icon-right {display:inline-flex}
+.main-table .chart-canvas {float:right;width:50%;margin:20px 0 0 0;padding:5px 10px}
+.main-table .chart-canvas.center {float:none;width:40%;margin:auto;padding:20px 50px 50px 50px}
+.main-table .chart-canvas.center.w-p100 {width:100%}
+.main-table .chart-canvas.pie {float:left;width:49%;padding:10px;}
+.main-table .chart-canvas canvas {width:100%}
+
+.chart-progress {position:relative;height:12px;margin-bottom:18px}
+.chart-progress > span {position:absolute;width:100px;text-align:right;line-height:12px}
+.chart-progress .progress {height:12px;line-height:12px;background-color:#EFEFEF;position:absolute;width:80%;margin-left:115px}
+.chart-progress .progress > small {font-size:12px;margin-left:10px}
+
+.table td.p0, .table th.p0 {padding:8px 0px}
+.top {color:#fff;width:20px;height:20px;border-radius:20px;margin:auto;text-align:center;line-height:20px}
+.top.top1 {background-color:#4250F8}
+.top.top2 {background-color:#5865FB}
+.top.top3 {background-color:#7580FF}
+.top.top4 {background-color:#9199FF}
+.top.top5 {background-color:#C8CCFF}
+.rank {font-size:12px}
+.rank.rank-up {color:#7580FF}
+.rank.rank-down {color:#E81D34}
+.rank.rank-up:before {content:'\e937';font-family:ChangerPressIcon}
+.rank.rank-down:before {content:'\e936';font-family:ChangerPressIcon}
+.rank > div {margin-top:-6px}

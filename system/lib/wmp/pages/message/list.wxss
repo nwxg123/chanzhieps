@@ -1,0 +1,52 @@
+/* pages/message/list.wxss */
+.comments.panel {
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.comments .comment-list {
+  padding: 12px 12px;
+  background-color: #FFFFFF;
+}
+.comments .vertical-line {
+  float: left;
+  width: 2px;
+  height: 14px;
+  background: #3C77FE;
+}
+.comments .list-text {
+  margin-left: 4px;
+  font-size: 16px;
+}
+.comments .comment {
+  margin-bottom: 5px;
+}
+.comments .comment-heading {
+  justify-content: space-between;
+  height: 32px;
+  margin: 16px 0;
+}
+.comments .comment-ext {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comments .authorName {
+  color: #333333;
+  font-size: 14px;
+}
+.comments .addedDate {
+  color: #999999;
+  font-size: 13px;
+}
+.comments .comment-content {
+  margin-left: 42px;
+  word-break: break-all;
+}
+.avatar {
+  width:30px;
+  height:40px;
+}

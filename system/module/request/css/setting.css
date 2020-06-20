@@ -1,0 +1,6 @@
+.leftmenu .nav{margin-bottom: 0;}
+.category-nav{border-top: none;}
+.category-nav ul li ul li.active{font-weight:bold;}
+.requestTitle{font-size:13px;}
+tr td{font-size:13px;}
+.panel {background:transparent;border:1px solid #ddd;}

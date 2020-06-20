@@ -1,0 +1,38 @@
+.main-table {min-width:1100px}
+.label-custom {color:#fff;background-color:#5EDADC}
+.reviewed {margin-left:10px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}
+.table th.actions {font-size:12px}
+.btn-toolbar .input-control {width:140px}
+.btn-toolbar .input-control.search-box {width:120px}
+.title {float:left;max-width:65%}
+.title.p100 {max-width:100%}
+.title.p65 {max-width:65%}
+.stick {float:left}
+
+@media (max-width: 1400px)
+{
+    .c-category {display: none}
+    .btn-toolbar .input-control {width: 120px;}
+}
+@media (max-width: 1260px)
+{
+    .c-addedDate {display: none}
+    .btn-toolbar .space {margin: 0 2px;}
+    .nav-tabs-main {padding-right: 5px;}
+    .main-table>header .btn-toolbar {margin-right: 2px}
+    .btn-toolbar .input-control {width: 100px;}
+}
+@media (max-width: 1130px)
+{
+    .c-views {display: none}
+    .nav-tabs-main {padding: 2px 5px 0 10px}
+    .nav-tabs-main > li {margin: 0 5px;}
+    .form-datecustom {padding: 6px; width: 80px;}
+}
+@media (max-width: 1060px)
+{
+    .btn-toolbar .input-control {display: none;}
+    .c-author {display: none}
+}
+.table .c-title .label{top:5px}

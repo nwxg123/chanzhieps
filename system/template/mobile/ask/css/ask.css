@@ -1,0 +1,5 @@
+.btn.primary.active, .btn.primary.focus, .btn.primary:active, .btn.primary:focus, .btn.primary:hover, .open>.dropdown-toggle.btn.primary, .btn.primary.active.focus, .btn.primary.active:focus, .btn.primary.active:hover, .btn.primary:active.focus, .btn.primary:active:focus, .btn.primary:active:hover, .open>.dropdown-toggle.btn.primary.focus, .open>.dropdown-toggle.btn.primary:focus, .open>.dropdown-toggle.btn.primary:hover {background-color: #205EFF;}
+.btn.primary {background: linear-gradient(to right, #709BFE, #205EFF); border-radius: 2px; border: 0;}
+.control {margin-top:5px;}
+.captcha-box > th {background-color: #0462f7; text-align: center; color: #ffffff; padding: 0 20px; border-radius: 2px}
+.captcha-box > td {float: right}

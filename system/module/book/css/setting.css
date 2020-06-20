@@ -1,0 +1,6 @@
+.panel {background-color: transparent;}
+.panel .panel-heading {padding: 0;}
+.panel .panel-heading .breadcrumb {padding: 0;}
+.panel .panel-body form {max-width: 100%;}
+.panel .panel-body form .submit-btn {margin-top: 10px;}
+.panel .panel-body form .btn-back {margin-left: 10px;}

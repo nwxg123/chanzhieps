@@ -1,0 +1,2 @@
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {margin-left: 0;}
+.checkbox-inline, .radio-inline {margin-right: 10px;}

@@ -1,0 +1,7 @@
+.panel-heading.clearfix{padding-bottom: 4px;}
+.score {color:#7580FF;margin:0px 5px}
+.score > .btn {color:#7580FF}
+.score > .icon {font-size:16px;margin-right:5px}
+
+.table th.actions {font-size:12px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}

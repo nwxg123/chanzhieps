@@ -1,0 +1,25 @@
+#mainContent .panel{background-color: transparent;}
+#mainContent .panel .panel-heading {padding: 10px 0; display: flex; justify-content: flex-end;}
+
+.main-table .score .my-score {float: left; line-height: 35px; color: #7580FF;}
+.main-table .score .get-score .btn {color: #7580FF;}
+.main-table .score .get-score {float: left; margin-left: 10px;}
+.main-table .get-effect {float: left; margin-left: 20px;margin-right:30px}
+
+#effects tbody, tfoot{border: 1px solid #DDDDDD;}
+#effects thead tr {height: 50px;}
+#effects thead tr th {vertical-align: middle;}
+#effects .imported{color:#353535;}
+#effects .padding-th{width: 7%;}
+#effects .name-th{width: 20%;}
+#effects .category-th{width: 22%; text-align: center;}
+#effects .category{text-align: center;}
+#effects .created-time-th{width: 45%; text-align: center;}
+#effects .created-time{text-align: center;}
+#effects .preview-th{text-align: center; font-size: 12px; padding: 8px 0;}
+#effects .preview{text-align: center;}
+#effects .preview .icon {font-size: 16px;}
+#effects .import-th{text-align: center; font-size: 12px; padding: 8px 10px 8px 0;}
+#effects .import{text-align: center; padding: 8px 10px 8px 0; border-right: 1px solid #DDDDDD;}
+#effects .import .icon {font-size: 16px;}
+#effects .icon-check{color: #22D3B6;}

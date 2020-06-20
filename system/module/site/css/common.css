@@ -1,0 +1,5 @@
+.panel {background:transparent;border:1px solid #ddd;}
+.text-important {color:#999;font-size:12px}
+.table-form > tbody > tr > th.top {vertical-align: unset}
+.table-form > tbody > tr > th.top-input {vertical-align: unset;padding-top:14px}
+.table.table-form th, .table.table-form td {padding:8px}

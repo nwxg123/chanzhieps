@@ -1,0 +1,1 @@
+<?php if(!defined('RUN_MODE')) die();?>

@@ -1,0 +1,8 @@
+@media (max-width: 1300px)
+{
+    .c-views {display: none}
+}
+@media (max-width: 1195px)
+{
+    .c-addedDate {display: none}
+}

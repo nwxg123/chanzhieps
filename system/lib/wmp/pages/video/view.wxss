@@ -1,0 +1,112 @@
+/* pages/video/view.wxss */
+
+video {
+    width: 100%;
+    height: 421rpx;
+}
+
+.video {
+    background-color: #ffffff;
+    padding:0 0 10rpx 0;
+}
+
+.video .detail .cover-img {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 421rpx;
+}
+
+.video .detail .play-btn {
+    position: absolute;
+    width: 96rpx;
+    height: 96rpx;
+    margin: 163rpx 0 0 327rpx;
+    z-index: 200;
+}
+
+.video .title-group {
+    margin: 24rpx 24rpx 0 24rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.video .title-group .icon {
+    display: inline-block;
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align:middle;
+    margin-right: 8rpx;
+    margin-bottom: 6rpx;
+}
+
+.video .title-group .title {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.video .ext {
+    width: 662rpx;
+    height: 64rpx;
+    margin: 32rpx auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video .ext .left {
+    display:flex;
+    align-items:center;
+}
+
+.video .ext .left .avatar {
+    font-size: 64rpx;
+    width: 64rpx;
+    height: 64rpx;
+    line-height: 64rpx;
+    background-color: #f3f3f3;
+    border-radius: 4rpx;
+    color: #999999;
+}
+
+.video .ext .left .edit-info {
+    margin-left: 20rpx;
+}
+
+.video .ext .left .edit-info .author {
+    font-size: 28rpx;
+    color: #333333;
+    font-weight: bold;
+}
+
+.video .ext .left .edit-info .addedDate {
+    font-size: 24rpx;
+    color: #999999;
+}
+
+.video .ext .right .source {
+    text-align: center;
+    font-size: 24rpx;
+    color: #0049FF;
+    background-color: #E0E9FF;
+    float:right;
+    padding:3rpx 6rpx;
+    border-radius: 2rpx;
+
+}
+
+.video .ext .right .play-amount {
+    clear: both;
+}
+
+.video .ext .right .play-amount .icon {
+    vertical-align: middle;
+    width: 24rpx;
+    height: 24rpx;
+}
+
+.video .ext .right .play-amount .amount {
+    vertical-align: middle;
+    color: #999999;
+    margin-left: 8rpx;
+}

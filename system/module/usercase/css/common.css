@@ -1,0 +1,6 @@
+.panel {background:transparent;border:1px solid #ddd;}
+.f-14px{font-size:14px;}
+.side > .btn-block {margin-bottom: 20px; font-size: 14px; padding: 8px}
+.leftmenu > .nav{margin-bottom: 0;}
+.nav-stacked.nav-primary > li:last-child > a{border-bottom-left-radius: 0; border-bottom-right-radius: 0;} 
+.article {padding:0px 20px 20px 20px;margin-bottom:10px}

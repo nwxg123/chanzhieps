@@ -1,0 +1,22 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <view class="tag-block user-image">
+    <button class="tag" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <image class="avatar" src="{{avatar}}"></image>
+    <view class="tag-body">
+      <view class="tag-title">
+        <view>
+          <text>{{name}}</text>
+        </view>
+        <view>
+          <text>{{clickLogin}}</text>
+        </view>
+      </view>
+      <view class='tag-right'>
+        <image src="./image/right.png"></image>
+      </view>
+    </view>
+    </button>
+  </view>
+  <include src="../common/footer.wxml" />
+</view>

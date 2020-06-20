@@ -1,0 +1,37 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <view class="comment-list">
+    <view class="title vertical-center">
+      <text class="vertical-line"></text>
+      <text class="list-text">评论列表</text>
+    </view>
+    <view id="commentsListAsync">
+      <view id="commentsListWrapper">
+        <view class="condensed bordered" id="commentsList">
+          <view class="comment" wx:for="{{message.comments}}" wx:for-item="info" wx:key="info">
+            <view class="comment-heading vertical-center">
+              <view class="left vertical-center">
+                <view class="avatar vertical-center text-muted">
+                  <image class="avatar" wx:if="{{info.avatar.length != 0}}" src="{{info.avatar}}"></image>
+                  <image class="avatar" wx:else src="../message/image/default.png"></image>
+                </view>
+                <view class="comment-ext">
+                  <text wx:if="{{info.realname}}" class="authorName">{{info.realname}}</text>
+                  <text wx:elif="{{info.from}}" class="authorName">{{info.from}}</text>
+                  <text wx:else class="authorName">昵称</text>
+                  <text class="addedDate">{{info.date}}</text>
+                </view>
+              </view>
+              <view class="actions reply-text"></view>
+            </view>
+            <view class="comment-content">{{info.content}}</view>
+          </view>
+        </view>
+        <block wx:if="{{message.pager}}">
+          <import src="/pages/common/pager.wxml" />
+          <template is="pager" data="{{pager: message.pager, url: message.desktopURL}}" />
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

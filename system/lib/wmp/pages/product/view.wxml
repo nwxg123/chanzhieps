@@ -1,0 +1,151 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<wxs src="../../utils/indeof.wxs" module="tools" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <include src="../common/header.wxml" />
+
+  <import src="../block/layout.tpl.wxml" />
+
+  <view class="layout layout-top">
+    <template wx:if="{{layouts.product_view && layouts.product_view.top}}" is="layout" data="{{blocks:layouts.product_view.top, config: config}}" />
+  </view>
+
+  <swiper wx:if="{{data.product.image.list}}" class="product-image-list gray" indicator-dots="true" autoplay="true" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff">
+    <block wx:for="{{data.product.image.list}}" wx:for-item="image" w:key="productImage">
+      <swiper-item item-id="{{index}}">
+        <image mode="aspectFit" src="{{helper.printFileURL(image, config)}}" class="product-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="header has-padding divider">
+    <view class="h3 space-sm">{{data.product.name}}</view>
+    <view wx:if="{{!data.product.unsaleable || data.product.unsaleable === '0'}}" class="flex-none title ele">
+      <text wx:if="{{data.product.negotiate === '1'}}" class="text-brown">面议</text>
+      <block wx:elif="{{data.product.promotion && data.product.promotion !== '0' && data.product.promotion !== '0.00'}}">
+        <block wx:if="{{data.product.price && data.product.price !== '0' && data.product.price !== '0.00'}}">
+          <text wx:if="{{attrprice}}" class="text-danger strong">￥{{attrprice}}</text>
+          <text wx:else class="text-danger strong">￥{{data.product.promotion}}</text>
+		  <text class="text-line-through muted small">￥{{data.product.price}}</text>
+        </block>
+      </block>
+      <block wx:elif="{{data.product.price && data.product.price !== '0' && data.product.price !== '0.00'}}">
+	    <text wx:if="{{attrprice}}">￥{{attrprice}}</text>
+	    <text wx:else>￥{{data.product.price}}</text>
+	  </block>
+    </view>
+  </view>
+
+  <form  bindsubmit="buySubmit" class="comment-form" data-module="order" data-method="confirm">
+  <view class="attributes divider small has-padding-v">
+    <block wx:if="{{data.attributes}}" wx:for="{{data.attributes}}" wx:for-item="attribute">
+      <view>
+        <text class="attribute-label muted strong">{{attribute.attribute}}</text>
+	  	<block wx:for="{{attribute.value}}" wx:for-item="value">
+	  	  <block wx:for="{{attribute.price}}" wx:for-index="pk" wx:for-item="price">
+	  	    <text wx:if="{{value == pk}}" bindtap="clickAttr" class="price-label {{tools.indexOf(attractivestr, attribute.attribute + '|=|' + value)  ? 'active' : ''}}" data-attribute="{{attribute.attribute}}" data-value="{{value}}" data-price="{{price}}">{{value}}</text>
+	  	    <input wx:if="{{value == pk && tools.indexOf(attractivestr, attribute.attribute + '|=|' + value)}}" class='hide' name="extra[{{attribute.product}}][{{attribute.attribute}}]" value="{{value}}"/>
+		  </block>
+	  	</block>
+	  	
+      </view>
+    </block>
+	
+    <view wx:if="{{data.product.amount}}">
+      <text class="attribute-label muted strong">库存</text>
+      <text class="attribute-value">{{data.product.amount}}{{data.product.unit}}</text>
+    </view>
+
+    <view wx:if="{{data.product.brand}}">
+      <text class="attribute-label muted strong">品牌</text>
+      <text class="attribute-value">{{data.product.brand}} {{data.product.model}}</text>
+    </view>
+
+    <view wx:if="{{!data.product.brand && data.product.model}}">
+      <text class="attribute-label muted strong">型号</text>
+      <text class="attribute-value">{{data.product.model}}</text>
+    </view>
+
+    <view wx:if="{{data.product.color}}">
+      <text class="attribute-label muted strong">颜色</text>
+      <text class="attribute-value">{{data.product.color}}</text>
+    </view>
+
+    <view wx:if="{{data.product.origin}}">
+      <text class="attribute-label muted strong">产地</text>
+      <text class="attribute-value">{{data.product.origin}}</text>
+    </view>
+
+    <block wx:for="{{data.product.attributes}}" wx:for-item="attribute">
+      <view wx:if="{{attribute.label && attribute.label && attribute.value && attribute.value}}">
+        <text class="attribute-label muted strong">{{attribute.label}}</text>
+        <text class="attribute-value">{{attribute.value}}</text>
+      </view>
+    </block>
+	
+	<view wx:if="{{data.product.negotiate == 0 && !data.product.mall && (data.stockOpened === false || data.product.amount > 0)}}">
+      <text class="attribute-label muted strong">数量</text>
+      <view class="attribute-value">
+	    <text bindtap="reduceNum" class="btn-update btn-minus">-</text>
+		<input type="number" class="btn-number text-center" value="{{number}}" id="count" name="count"/>
+		<text bindtap="addNum" class="btn-update btn-plus">+</text>
+	  </view>
+    </view>
+  </view>
+  <block wx:if="{{data.product.price && data.product.price !== '0' && data.product.price !== '0.00'}}">
+	<input wx:if="{{attrprice}}" class='hide' name="price" value="{{attrprice}}"/>
+	<input wx:else class='hide' name="price" value="{{data.product.promotion}}"/>
+  </block>
+  <block wx:elif="{{data.product.price && data.product.price !== '0' && data.product.price !== '0.00'}}">
+    <input wx:if="{{attrprice}}" class='hide' name="price" value="{{attrprice}}"/>
+	<input wx:else class='hide' name="price" value="{{data.product.price}}"/>
+  </block>
+  
+  <input class='hide' name="product[{{data.product.id}}]" value="{{data.product.id}}"/>
+  <input class='hide' name="count[{{data.product.id}}]" value="{{number}}"/>
+  <input class='hide' name="count" value="{{number}}"/>
+  
+
+  <view class="content has-padding white fluid">
+    <rich-text nodes="{{data.product.content}}" />
+  </view>
+  
+  <view class="commentBox">
+    <include src="../message/comment.wxml" />
+  </view>
+  
+  <view class="layout layout-bottom">
+    <template wx:if="{{layouts.product_view && layouts.product_view.bottom}}" is="layout" data="{{blocks:layouts.product_view.bottom, config: config}}" />
+  </view>
+  
+  <view class="msger bottom {{msgClass}}"><view class="msger-content">{{msgInfo}}</view><view class="msger-actions"><button type="button" bindtap="closeMsg" class="close action"></button></view></view>
+  <view id="footer">
+    <import src="../block/layout.tpl.wxml" />
+    <template wx:if="{{layouts.all && layouts.all.bottom}}" is="layout" data="{{blocks: layouts.all.bottom, grid: false}}" />
+    <view class="center-content has-padding muted">
+  	<text space="nbsp" class="small">Powered by <text class="icon icon-chanzhi"></text></text>
+    </view>
+  </view>
+
+  <view class="appbar fix-bottom">
+  	  <view class="footer-left">
+  	    <navigator url="/pages/cart/browse">
+		  <image class="cart" src="../product/image/cart.png"></image>
+		  <text class="red circle">1{{cartnum}}</text>
+  	    </navigator>
+  	  </view>
+  	  <view class="footer-left">
+  	     <view bindtap="showMessage">
+		  <image class="message" src="../product/image/comment.png"></image>
+  	    </view>
+  	  </view>
+  	  <view class="footer-right">
+		<view class="right-btn left">
+		  <button class="btncart">加入购物车</button>
+		</view>
+		<view class="right-btn">
+		  <button class="buyBtn" formType="submit">立即购买</button>
+		</view>
+  	  </view>
+  </view>
+  </form>
+</view>

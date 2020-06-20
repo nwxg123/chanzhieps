@@ -1,0 +1,20 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <view class="comments panel">
+    <include src="../message/list.wxml" />
+	<view class="{{messageClass}}">
+      <view class="comment-post vertical-center">
+        <form bindsubmit="formSubmit" class="comment-form" data-module="message" data-method="post" data-param="{{messageParam}}">
+          <view class='form-body text-overflow'>
+            <view class="form-group  pull-left">
+              <input class='comment-input' name="content" placeholder="请输入内容"/>
+              <input class='hide' name="objectID" value="{{message.objectID}}"/>
+              <input class='hide' name="objectType" value="{{message.objectType}}"/>
+            </view>
+            <view class="form-group  pull-right"><button id="submitComment" formType="submit">发表评论</button></view>
+          </view>
+        </form>
+      </view>
+	</view>
+  </view>
+</view>

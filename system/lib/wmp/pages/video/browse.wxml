@@ -1,0 +1,59 @@
+<wxs src="../common/helper.wxs" module="helper" />
+
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <!-- 导入公共 header -->
+  <include src="../common/header.wxml" />
+
+  <!-- 导入布局模版 -->
+  <import src="../block/layout.tpl.wxml" />
+
+  <!-- 视频列表顶部布局 -->
+  <view class="layout layout-top">
+    <template wx:if="{{layouts.video_browse && layouts.video_browse.top}}" is="layout" data="{{blocks: layouts.video_browse.top, config: config}}" />
+  </view>
+<view class='sort'>
+    <view class='right' bindtap="redirectTo" wx:if="{{data.sort == 'asc'}}" data-url="/pages/video/browse?categoryID={{data.category.id}}&pageID=1&order=desc">正序</view>
+    <view class='right' bindtap="redirectTo" wx:if="{{data.sort == 'desc'}}" data-url="/pages/video/browse?categoryID={{data.category.id}}&pageID=1&order=asc">反序</view>
+  </view>
+  <!-- 文章列表 -->
+  <view class="video-list">
+    <!-- 此处 data.videos 应该输出纯 JS 数组，而不是 JS 对象，否则 for 循环无法保证输出顺序 -->
+    <view class="video" wx:for="{{data.videos}}" wx:for-item="video" wx:key="id" wx:for-index="index" >
+        <view class="detail">
+          <cover-view class="title-group" hidden="{{video.hideCover}}">
+            <cover-image wx:if="{{video.sticky != 0}}" src="./image/top.png" class="icon"></cover-image>
+            <cover-view class="{{video.sticky != 0 ? 'title-icon' : 'title'}}">{{video.title}}</cover-view>
+          </cover-view>
+          <video style="{{video.style}}" poster="{{helper.printFileURL(video.image.primary, config)}}" custom-cache="{{false}}" title="{{video.title}}" src="{{video.src}}" id="video{{video.id}}" data-videosrc="{{video.processedLink}}" data-index="{{index}}" data-videoid="{{video.id}}" bindtap="playVideo" bindplay="bindPlay" bindpause="bindPause"></video>
+        </view>
+        <navigator class="ext" url="{{video.access.result === 'fail' ? '' : '/pages/video/view?id=' + video.id}}">
+          <view class="left">
+            <text class="avatar icon icon-1x icon-user"></text>
+            <text class="author">{{video.author}}</text>
+            <text wx:if="{{video.source !== 'original' && video.copyURL}}" class="source">转自：{{video.copySite}} </text>
+            <text wx:else class="source">原创</text>
+          </view>
+          <view class="right" space="nbsp">
+            <view class="play-amount">
+              <image class="icon" src="./image/play-amount.png"></image>
+              <text class="amount">{{video.views}}</text>
+            </view>
+          </view>
+        </navigator>
+        <view wx:if="{{data.videos.length - 1 !== index}}"  class="divider"></view>
+    </view>
+  </view>
+
+  <block wx:if="{{data.pager}}">
+    <import src="/pages/common/pager.wxml" />
+    <template is="pager" data="{{pager: data.pager, url: data.desktopURL}}" />
+  </block>
+
+  <!-- 视频列表底部布局 -->
+  <view class="layout layout-bottom">
+    <template wx:if="{{layouts.video_browse && layouts.video_browse.bottom}}" is="layout" data="{{blocks: layouts.video_browse.bottom, config: config}}" />
+  </view>
+
+  <!-- 导入公共 footer -->
+  <include src="../common/footer.wxml" />
+</view>

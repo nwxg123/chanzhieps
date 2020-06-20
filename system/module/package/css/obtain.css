@@ -1,0 +1,16 @@
+.pager {margin-top: 0;}
+.list-group{padding-left: 0; margin-top: 20px; margin-bottom: 20px;}
+.list-group-item:hover {color: #333; text-decoration: none; background-color: #ebf2f9;}
+.list-group-item.active, .list-group-item.active:hover {z-index: 2; color: #fff; background-color: #5b69ff; border-color: #5b69ff;}
+.list-group-item {color: #333;text-decoration: none; position: relative; display: block; padding: 10px 15px; margin-bottom: -1px; background-color: #fff; border: 1px solid #ddd;}
+.list-group-item:first-child {border-radius: 4px 4px 0 0;}
+.list-group-item:last-child {margin-bottom: 0; border-radius:0 0 4px 4px;}
+.cards{padding-top: 0px; padding-bottom: 10px;}
+.stars-list{color: #E48600;}
+
+.card {position: relative; display: block; padding: 0; margin-bottom: 20px; overflow: hidden; border: 1px solid #ddd;}
+.card .card-heading {display: block; padding: 10px; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.card .card-actions, .card .card-content {padding: 0 10px 10px 10px; overflow: hidden; text-overflow: ellipsis;}
+.card .card-actions, .card .card-content {padding: 0 10px 10px 10px; overflow: hidden; text-overflow: ellipsis;}
+
+.input-group #submit {margin: 0;}

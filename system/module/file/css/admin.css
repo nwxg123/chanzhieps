@@ -1,0 +1,11 @@
+.table th.first {padding:0px}
+.table th.actions {font-size:12px}
+.main-table .table > tbody > tr > td.c-actions, .main-table .table > thead > tr th.actions {padding:8px 0px}
+
+.main-table .table .pager {margin:4px 0px}
+.main-table .table {margin-bottom:0px}
+
+#submit.delete {margin-left:20px;background-color:transparent}
+
+.file-image {width:102px;height:102px;line-height:100px;margin:auto;border:1px solid #e3e5ea}
+.table-footer > .batch {line-height:20px;margin:4px 0px 0px 20px}

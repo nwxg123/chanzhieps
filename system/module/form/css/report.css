@@ -1,0 +1,32 @@
+.items .item {padding: 10px; border-bottom: none;border-bottom:1px solid #ddd}
+.items .item .item-heading .required:after {top: 0px; margin-left: 10px;}
+.items .item .item-content {padding: 10px; padding-bottom: 0px;overflow:hidden}
+.items .item .item-content .pager {margin:0px}
+.items .item .item-content .panel {margin-bottom: 0px;}
+
+img {width: 80px; height: 80px; margin-right: 20px;}
+
+.col-md-9, .col-md-3 {padding-left: 0px;}
+
+.noRightBorder {border-right: 0px !important;}
+.noLeftBorder {border-left: 0px !important;}
+
+.progress {
+  height: 20px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: #3280fc;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}

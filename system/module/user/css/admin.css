@@ -1,0 +1,25 @@
+#userList th, #userList td{overflow: hidden; white-space: nowrap;}
+#userList td.operate, #userList tr:last-child td{overflow: visible; white-space: normal;}
+
+.panel .table{margin-bottom: -1px;}
+.panel-heading{padding-bottom: 4px;}
+#typeNav {border-bottom: none;}
+
+.table th.first {padding:0px}
+
+span.span {position:relative}
+span.span:before {content:' ';width:6px;height:6px;border-radius:6px;position:absolute;left:-10px;top:4px}
+span.span-danger:before  {background-color:#e81d34}
+span.span-success:before {background-color:#22d3b6}
+
+.checkbox-primary>label, .radio-primary>label {padding-left:25px}
+
+.table th.actions {font-size:12px}
+.main-table .table > tbody > tr > td.c-actions, .main-table .table > thead > tr th.actions {padding:8px 0px}
+
+.main-table .table .pager {margin:4px 0px}
+
+#submit.delete {margin-left:20px;background-color:transparent}
+
+.main-table .table {margin-bottom:0px}
+.table-footer > .batch {line-height:20px;margin:4px 0px 0px 20px}

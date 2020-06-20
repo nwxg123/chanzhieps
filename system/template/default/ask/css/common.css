@@ -1,0 +1,24 @@
+.row >.col-md-2{width:20%;}
+.row >.col-md-10{width:80%;}
+.bestanswer {border: none;}
+
+.label-ask {font-size: 12px; font-weight: normal; border-radius: 11px; height: 14px; line-height: 14px; background-color: #f1f1f1; padding: 3px 6px; color: #666;  border: 1px solid transparent}
+a.label-ask:hover {text-decoration: none; background-color: #fff; color: #333; opacity: 1; border-color: #ddd}
+.label-ask.ask-unResolved {color: #D2322D}
+.label-ask.ask-resolved {color: #229F24}
+.label-ask.ask-highScore {color: #E48600}
+.label-ask.ask-myQuestion {color: #39B3D7}
+.label-ask.ask-myAnswer {color: #3280FC}
+
+.active.label-ask {color: #f1f1f1!important; border-color: transparent; opacity: 0.85; background-color: #999}
+a.active.label-ask:hover {color: #fff!important; border-color: transparent; opacity: 1}
+.active.label-ask.ask-unResolved {background-color: #D2322D}
+.active.label-ask.ask-resolved {background-color: #229F24}
+.active.label-ask.ask-zeroAnswers {background-color: #999}
+.active.label-ask.ask-highScore {background-color: #E48600}
+.active.label-ask.ask-myQuestion {background-color: #39B3D7}
+.active.label-ask.ask-myAnswer {background-color: #3280FC}
+
+p{margin:0px;}
+
+.tree li a.active{font-weight: bold;}

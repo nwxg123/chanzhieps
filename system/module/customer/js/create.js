@@ -1,0 +1,10 @@
+$().ready(function()
+{
+    $('#create').change(function()
+    {
+        $('.tr-create').toggle($(this).prop('checked'));
+        $('.hide-create').toggle(!$(this).prop('checked'));
+        $('.show-create').toggle($(this).prop('checked'));
+    });
+    $('#create').change();
+});

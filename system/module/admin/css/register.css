@@ -1,0 +1,6 @@
+#bindTip{margin-top:0}
+#bindBtn{margin-top:-4px}
+.td-captcha {position:relative}
+.td-captcha .input-group {position:absolute;padding-left:120px;top:6px;left:-6px}
+.td-captcha .required {position:absolute;top:6px;right:6px}
+.uncertified {position:absolute;z-index:2;top:6px}

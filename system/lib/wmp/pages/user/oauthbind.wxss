@@ -1,0 +1,4 @@
+/* pages/user/login.wxss */
+.errormsg {
+  padding:10px 10px
+}

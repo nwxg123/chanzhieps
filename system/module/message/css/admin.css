@@ -1,0 +1,68 @@
+dl.alert{margin-top: 10px;}
+dl.alert dl.alert{margin-bottom: 0;}
+.reply-alert {max-height: 100px; overflow-y: scroll;}
+dl.alert dd{display:inline-block; margin-right: 20px;}
+.table-form > tbody > tr > th {width:50px}
+.panel {border: none; box-shadow:none;}
+.panel-heading {border: 1px solid #ddd;}
+.panel-body{border-left: 1px solid #ddd; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 0 0;}
+.separator {border-top:1px solid #ddd;}
+.pager{margin-top:5px;}
+.original, .original textarea {background-color:#fbfbfb;}
+.message table {margin-bottom:0;}
+.message
+{
+    display: table;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: all .5s cubic-bezier(.175,.885,.32,1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    margin: 6px 0;
+    padding: 0;
+    max-width: 100%;
+}
+.message-id
+{
+    display: table-cell;
+    padding: 8px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    text-align: center;
+    background: #f1f1f1;
+    border-right: 1px solid #ddd;
+    width: 60px;
+}
+th.th-from
+{
+    text-align: center;
+    padding-right: 0;
+    width: 180px;
+    border-right: solid 1px #f1f1f1;
+    vertical-align: middle;
+}
+.message-action
+{
+    display: table-cell;
+    border-left: solid 1px #f1f1f1;
+    width: 100px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.main-table table {margin-bottom:0px}
+.table th.first {padding:0px}
+.main-table .table > tbody > tr > td.c-actions, .main-table .table > thead > tr th.actions {padding:8px 0px}
+.table th.actions {font-size:12px}
+.main-table table .uname {font-size:12px}
+.main-table table .uname .icon {font-size:12px;margin-right:5px}
+.main-table table .gray {color:#999;margin-left:20px}
+.main-table table .title {color:#666;margin-left:20px}
+.main-table table .title a{color:#151515;text-decoration:underline}
+.main-table table .content {width: 95%;white-space: normal;height: 40px;overflow-y: auto;margin-top:5px;padding-right:10px}
+.main-table table tbody .checkbox-primary {margin-top:20px}
+.main-table table tbody .c-actions {padding-top:28px}
+.table-footer .btn-batch {margin-left:20px;margin-right:0px}
+.table-footer > .batch {line-height:20px;margin:4px 0px 0px 20px}

@@ -1,0 +1,16 @@
+.panel {background-color: transparent;}
+.panel .panel-heading {padding: 0 20px; height: 32px; line-height: 32px;}
+.panel .panel-heading .panel-actions {padding: 0 8px 0 0; left: 180px;}
+.panel .panel-heading .panel-actions .search-box {width: 211px;}
+.panel .panel-heading strong {vertical-align: center;}
+
+.panel table {margin-top: 10px;}
+.panel table > thead > tr > th {padding: 12px 10px;}
+.panel table > thead > tr > th.actions {font-size: 12px; padding: 12px 0;}
+.panel table > tbody > tr > td.article-path {overflow: hidden; text-overflow: ellipsis;}
+.panel table > tbody > tr > td.article-title span:first-child {max-width: 82%; display: inline-block; vertical-align: middle; overflow: hidden; text-overflow: ellipsis;}
+.panel table > tbody > tr > td > span:nth-last-child(1):first-child {max-width: 100%;}
+.panel table > tbody > tr > td.actions {padding: 8px 0;}
+.panel table > tfoot > tr > td {border-bottom: 0;}
+
+.panel-heading > a.btn-back {margin:0;padding:0px 10px;line-height:32px}

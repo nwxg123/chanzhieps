@@ -1,0 +1,7 @@
+.faq-category .panel-body > ul{list-style-type: none;}
+.faq-category ul li a.active{font-weight: bold;}
+
+ol.faqList{padding-left: 35px;}
+ol.faqList li{margin-top: 5px;}
+
+.panel-heading > #faqTab{margin: -4px -8px -9px; font-weight: bold;}

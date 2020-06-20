@@ -1,0 +1,49 @@
+/* pages/message/comment.wxss */
+@import "../message/list.wxss"
+.comments .comment-post {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 60px;
+  border: 1px solid #f8f8f8;
+  left: 0;
+  z-index: 10;
+}
+.comments .vertical-center {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+.comments .form-group {
+  margin-bottom: 0;
+}
+.comments .comment-form #submitComment {
+  border-radius: 2px;
+  background: linear-gradient(to left, #1B5AFF, #709BFE);
+  height: 30px;
+  font-size: 14px;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  padding: 8px 14px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.comments .form-body {
+  padding: 0px 10px;
+}
+form {
+  width:100%
+}
+.comments .comment-input {
+  border-radius: 3px;
+  border: 0;
+  background-color: #F3F3F3;
+  height: 30px;
+  width: 180px;
+  font-size: 12px;
+  padding: 0px 10px;
+}

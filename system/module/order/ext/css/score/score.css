@@ -1,0 +1,6 @@
+.panel-heading{padding-bottom: 4px;}
+.panel .table{margin-bottom: -1px;}
+#typeNav {border-bottom: none;}
+.panel-actions .form-search{width: 400px;}
+.panel-actions .form-search #product {min-width: 140px;}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}

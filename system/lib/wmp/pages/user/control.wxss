@@ -1,0 +1,64 @@
+/* pages/user/control.wxss */
+.tag-block {
+  margin: 12px;
+  background: #fff;
+}
+.tag-block > .tag {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 12px;
+}
+.tag-block > .tag > image {
+  float: left;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.tag-block > .tag > .tag-body {
+  height: 40px;
+  padding-left: 12px;
+  display: block;
+}
+.tag-block > .tag > .tag-body > .tag-title {
+  float: left;
+}
+.tag-block > .tag > .tag-body > .tag-right {
+  float: right;
+}
+.tag-block > .tag > .tag-body > .tag-right > image {
+  width: 16px;
+  height: 26px
+}
+.tag-block.user-image {
+  margin: 0px;
+  height: 60px;
+  padding: 15px 0px;
+}
+.tag-block.user-image > .tag {
+  height: 60px;
+  line-height: 60px;
+  background:#fff;
+}
+.tag-block.user-image > .tag > image {
+  height: 60px;
+  width: 60px;
+}
+.tag-block.user-image > .tag > .tag-body {
+  height: 60px;
+  padding-left: 72px;
+}
+.tag-block.user-image > .tag > .tag-body > .tag-title {
+  padding: 5px 0px 5px 1px;
+  text-align: left;
+}
+.tag-block.user-image > .tag > .tag-body > .tag-title > view {
+  height: 25px;
+  line-height: 25px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+}
+.tag-block.user-image > .tag > .tag-body > .tag-title > view:first-child {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}

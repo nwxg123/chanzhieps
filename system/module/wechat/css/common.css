@@ -1,0 +1,4 @@
+section.main-table {padding:0px;}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}
+.table th.actions {font-size:12px}
+.main-table.fixed {border-bottom:0}

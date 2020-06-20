@@ -1,0 +1,9 @@
+.price-label{border: 1px solid #b8b7bd; margin: 0 10px 5px 0; padding:5px 3px; cursor:pointer; display: inline-block;}
+.price-label:hover, .price-label.active{border: 1px solid #be0106;}
+
+#btnBox{margin-left:85px; font-weight:400;}
+#buyBtn {background:#f40; font-size:16px; padding:8px 16px; color:#FFF; cursor:pointer;}
+#buyBtn:hover, #buyBtn:visited {background:#f20; color:#FFF;}
+#cartBtn {background:#E43E41; font-size:16px; padding:8px 16px; color:#FFF; cursor:pointer;}
+#cartBtn:hover, #cartBtn:visited {background:#E41a41; color:#FFF;}
+.btn-soldout {background:#999; font-size:16px; padding:8px 16px; color:#FFF; cursor:pointer;}

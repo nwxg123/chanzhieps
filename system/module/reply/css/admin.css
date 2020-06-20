@@ -1,0 +1,16 @@
+#replyList td.relpy-content {padding: 0; max-width:600px;}
+#replyList td.relpy-content > a {display: block; padding: 8px; max-height: 180px; overflow-y: auto; word-break: break-all; max-width: 100%;}
+
+.table th.actions {font-size:12px}
+.main-table .table > tbody > tr > td.c-actions, .main-table .table > thead > tr th.actions {padding:8px 0px}
+.main-table .table .pager {margin:4px 0px}
+#submit.delete {margin-left:20px;background-color:transparent}
+.main-table table .content {width: 95%;white-space: normal;height: 40px;overflow-y: auto;padding-right:10px;line-height:20px}
+.main-table table tbody .checkbox-primary {margin-top:10px}
+.main-table table tbody td {line-height:40px}
+.main-table table tbody td .board {line-height:20px}
+.main-table table tbody td .forum{line-height:20px}
+
+.table th.first {padding:0px}
+.main-table .table {margin-bottom:0px}
+.table-footer > .batch {line-height:20px;margin:4px 0px 0px 20px}

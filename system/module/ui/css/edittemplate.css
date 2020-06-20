@@ -1,0 +1,26 @@
+a.btn-file{margin:2px; display:inline-block;}
+a.btn-file.active{font-weight:bold;}
+.folder-menu .panel-heading .icon{color:#145ccd; font-weight:normal;}
+.folder-menu .panel-heading{cursor:pointer;}
+.folder-menu .panel-heading > .panel-actions{padding-top:6px; padding-right:6px;}
+
+.editor-wrapper pre {border: none}
+
+.row-main{background:#efefef;}
+#navMenu{font-size:13px; font-weight:bold; padding-right:20px}
+#navMenu .dropdown{display:inline-block; margin-left:10px;}
+#navMenu #fileBox .dropdown-menu{max-height:600px; overflow:auto;}
+#navMenu a{text-decoration: none;}
+
+#mainPanel{margin:0 20px; background-color: transparent;}
+#mainPanel .text-important {line-height: 50px;}
+#mainPanel .panel-heading {padding: 0;}
+#mainPanel .panel-heading .edit-text {font-size: 16px; }
+#mainPanel .panel-heading .edit-text {font-size: 16px; }
+#mainPanel .panel-footer{text-align: center; padding: 20px 0;}
+
+#deviceMenu {bottom: 10px;}
+
+#content-editor {font-size: 14px !important; border: 1px solid #CECECE;}
+#content-editor .ace_gutter {background-color: #ffffff; margin: 10px 0;}
+#content-editor .ace_scroller {background-color: #f5f5f5; padding: 10px;}

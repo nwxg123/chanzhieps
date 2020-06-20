@@ -1,0 +1,91 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <include src="../common/header.wxml" />
+  <form  bindsubmit="formSubmit" class="comment-form" data-module="order" data-method="create">
+  <view class="panel-body">
+    <view class="bg-gray-pale"><text class="strong">收货地址</text></view>
+	<view class="order-address {{addressesClass}}">
+	  <view class="address-top">
+	    <text>收货人:</text>
+		<text class="show-contact">{{data.addresses[0].contact}}</text>
+		<text class="show-phone right">{{data.addresses[0].phone}}</text>
+	  </view>
+	  <view class="address-body">
+	    <text>收货地址:</text>
+		<text>{{data.addresses[0].address}}</text>
+	  </view>
+	  <input class='hide' name="deliveryAddress" value="{{data.addresses[0].id}}"/>
+	</view>
+  </view>
+  
+  <view class="panel-body">
+    <view class="bg-gray-pale"><text class="strong">商品信息</text></view>
+	<view class="cards condensed cards-list">
+	  <block wx:for="{{data.products}}" wx:for-item="product">
+	    <view class="card card-block">
+		  <view class="card-image">
+		    <image class="cardimage" mode="aspectFit" src="{{helper.printFileURL(product.image.primary, config)}}" />
+		  </view>
+		  <view class="card-body">
+		    <view class="product-title">
+			  <navigator url="/pages/product/view?id={{product.id}}">{{product.name}}</navigator>
+			</view>
+		  <view class="card-tap">
+		    <block wx:if="product.extra" wx:for="{{product.extra}}" wx:for-index="code"  wx:for-item="value">
+			  <text>{{value}}</text>
+			  <input class='hide' name="extra[{{product.id}}][{{code}}]" value="{{value}}"/>
+			</block>
+		  </view>
+		  <view class="product-price">
+		    <text>价格</text>
+		    <text  class="product-li" wx:if="{{product.promotion !== 0}}">￥ {{product.promotion}}</text>
+			<text  class="product-li" wx:if="{{product.promotion !== 0}}" class="text-muted text-line-through">￥ {{product.price}}</text>
+			<text  class="product-li" wx:if="{{product.promotion === 0}}">￥ {{product.price}}</text>
+			<input wx:if="{{product.promotion !== 0}}" class='hide' name="price[{{product.id}}]" value="{{product.promotion}}"/>
+			<input wx:if="{{product.promotion === 0}}" class='hide' name="price[{{product.id}}]" value="{{product.price}}"/>
+		  </view>
+		  <view class="product-amount">
+			  <text>金额</text>
+			  <text class="product-li" wx:if="{{product.total}}">￥ {{product.total}}</text>
+			  <text class="product-li" wx:elif="{{product.promotion !== 0}}">￥ {{product.promotion * product.count}}</text>
+			  <text class="product-li" wx:elif="{{product.promotion === 0}}">￥ {{product.price * product.count}}</text>
+		  </view>
+		  <view class="product-count">
+			  <text>数量</text>
+			  <text bindtap="reduceNum" data-id="{{product.id}}" class="btn-update btn-minus product-li">-</text>
+			  <input type="number" bindinput="inputNum" data-id="{{product.id}}" class="btn-number text-center" value="{{product.count}}" id="count" name="count[{{product.id}}]"/>
+			  <text bindtap="addNum" data-id="{{product.id}}" data-count="{{product.count}}" class="btn-update btn-plus">+</text>
+		  </view>
+		  <input class='hide' name="product[{{product.id}}]" value="{{product.id}}"/>
+		  </view>
+		</view>
+	  </block>
+	</view>
+  </view>
+  
+  <view class="panel-body">
+    <view class="alert bg-gray-pale"><text class="strong">买家留言</text></view>
+	<view><textarea placeholder="选填，给卖家留言" name="note" class="form-control textarea"/></view>
+  </view>
+  
+  <view class="msger bottom {{msgClass}}"><view class="msger-content">{{msgInfo}}</view><view class="msger-actions"><button type="button" bindtap="closeMsg" class="close action"></button></view></view>
+  <view id="footer">
+    <import src="../block/layout.tpl.wxml" />
+    <template wx:if="{{layouts.all && layouts.all.bottom}}" is="layout" data="{{blocks: layouts.all.bottom, grid: false}}" />
+    <view class="center-content has-padding muted">
+  	<text space="nbsp" class="small">Powered by <text class="icon icon-chanzhi"></text></text>
+    </view>
+  </view>
+  <view class="appbar fix-bottom">
+  	  <view class="footer-right">
+		<view class="right-btn">
+		  <button class="btn-order-submit btn danger" formType="submit">提交订单</button>
+		</view>
+		<view class="right-total">
+		  <text>合计金额：</text>
+		  <text class="text-lg text-danger">￥ {{total_fee}}</text>
+		</view>
+  	  </view>
+  </view>
+  </form>
+</view>

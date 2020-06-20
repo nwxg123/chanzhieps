@@ -1,0 +1,19 @@
+#main {padding: 20px 38px;}
+#mainContent .panel {background-color: transparent;}
+
+.component .panel-heading{padding: 0; font-size: 16px; font-weight: bold}
+.component .panel-body{padding: 0;}
+
+#logoForm {padding: 20px 0; display: flex; display: -webkit-flex;}
+
+#setLogo .row-logo .box{position:relative; border: 1px dashed #DDDDDD; width:300px; height:180px; text-align:center; margin-right: 30px;}
+#setLogo .row-logo .card{text-align:center; padding-top:65px; border:none; height:150px;}
+#setLogo .row-logo .card .icon-upload-cloud{color: #999999;}
+#setLogo .row-logo .text-important{margin:0 auto; font-size: 12px; color: #666666;}
+#setLogo .row-logo img.logo{height:60px; margin-top: -15px;}
+#setLogo .row-logo img.favicon{height:60px; margin-top: -15px;}
+#setLogo .row-logo .actions{position:absolute; right:10px; top:10px;}
+#setLogo .row-logo .actions .btn-editor, #setLogo .row-logo .actions  .btn-deleter {color:#999999}
+#setLogo .row-logo .actions .btn-editor:hover, #setLogo .row-logo .actions  .btn-deleter:hover {color:#7580ff}
+
+.cards-borderless {padding: 20px 0;}

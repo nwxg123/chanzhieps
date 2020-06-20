@@ -1,0 +1,31 @@
+.tab-content {margin: 10px;}
+
+#fixedProfile {
+  position: fixed;
+  z-index: 10;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+  display: none;
+  background-color: #fff;
+}
+.with-fixed-profile #fixedProfile {display: block;}
+
+.icon-mars:before {content: '\f222';}
+.icon-wechat:before {content: '\f1d7';}
+
+.dropdown-menu {min-width: 80px;}
+
+.items .item {padding: 10px 10px 0 10px; border: 1px solid #ddd;}
+.items .item .item-heading .required:after {top: 0px; margin-left: 10px;}
+.items .item .item-heading .order {margin-right: 10px;}
+.items .item .item-heading .sort {cursor: move;}
+.items .item .item-content {padding: 10px 0px;}
+.items .item .item-content .radio:first-child {margin-top: 0;} 
+.items .item .item-content .checkbox:first-child {margin-top: 0;} 
+.items .item .item-content .radio:last-child {margin-bottom: 0;} 
+.items .item .item-content .checkbox:last-child {margin-bottom: 0;} 
+
+.file-content .file-name div {word-wrap: break-word; overflow: hidden;}
+.file-content .file-name .radio {margin-top: 10px !important;}
+.file-content .file-name .checkbox {margin-top: 10px !important;}
+
+.main-table header {background:#fbfbfb;border-bottom:1px solid #ddd;}

@@ -1,0 +1,22 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <view class='panel'>
+    <view class='text-overflow'>
+      <button class='btn pull-right' bindtap="skipBind">跳过绑定</button>
+    </view>
+    <form bindsubmit="loginFormSubmit">
+      <view class='form-group {{class}} errormsg bg-danger-pale text-danger'><text>{{errorMsg}}</text></view>
+      <view class='form-group'>
+        <input class='form-control' name="account" placeholder="请输入用户名或Email"/>
+      </view>
+      <view class='form-group'>
+        <input class='form-control' type="password" name="password" placeholder="请输入密码"/>
+      </view>
+      <view class='form-group'>
+        <input class='hide' name="token"  value="{{token}}"/>
+        <button class='btn primary block' formType="submit">绑定已有账号</button>
+      </view>
+    </form>
+  </view>
+  <include src="../common/footer.wxml" />
+</view>

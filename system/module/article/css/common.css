@@ -1,0 +1,12 @@
+.tree li a.active{font-weight: bold;}
+.leftmenu > .nav{margin-bottom: 0;}
+.nav-stacked.nav-primary > li:last-child > a{border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+.category-nav{border-radius: 0; border-top:none;}
+.order{padding-left: 0;}
+.order div{ padding-left : 0; padding-right : 0;}
+.color .dropdown-toggle.btn{border-right: none;}
+
+ol.breadcrumb {margin-bottom:0px;margin-left:10px}
+.table-form > tbody > tr > th {width:100px}
+.main-form > form {max-width:unset;margin-right:50px}
+.table.table-form th, .table.table-form td {padding-right:15px}

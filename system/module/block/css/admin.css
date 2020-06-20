@@ -1,0 +1,21 @@
+.col-sm-3 .panel {border:1px solid #CECECE}
+.col-sm-3 .panel > .panel-heading {background-color:#ECEBF7}
+.col-sm-3 .panel > .panel-heading .panel-actions {padding:9px 8px}
+.col-sm-3 .panel > .panel-body {background-color:#FAFAFA;padding:12px 0px}
+body > .navbar-nav {position: absolute; right: 0; top: 0; z-index: 10;}
+#deviceMenu {bottom: 10px;}
+
+.block-group {padding:0px 10px 10px 10px;overflow:hidden}
+.block-group > .block-title {font-weight:600;padding-bottom:5px}
+.block-item {float: left; width: 50%; padding: 5px 50px 5px 5px; position: relative;}
+.block-item.full {width:100%}
+.block-item:before {content: ' '; background: #fff; position: absolute; left: 5px; top: 5px; right: 5px; bottom: 5px; border: 1px solid #ddd; z-index: 1; pointer-events: none;}
+.block-item.full:before {background:#f1f1f1}
+.block-item:hover:before {border-color: #3280fc; background: #eff7ff;}
+.block-item > .title {line-height: 20px; padding: 8px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; position: relative; z-index: 2;height:36px}
+.block-item > .title > small {opacity: .75;color:#7580ff}
+.block-item > .actions {position: absolute; top: 6px; right: 6px; bottom: 5px; line-height: 20px; z-index: 3;}
+.block-item > .actions .btn {padding: 6px 5px;float:left; border-radius: 0;}
+.block-item > .actions .btn-move {cursor: move;}
+.block-item.drag-shadow {z-index: 1510;}
+.block-item i {font-size:18px}

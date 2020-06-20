@@ -1,0 +1,4 @@
+/* pages/product/browse.wxss */
+image {
+  height:240px;
+}

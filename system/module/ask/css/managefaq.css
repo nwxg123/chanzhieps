@@ -1,0 +1,2 @@
+.panel-group .panel{margin: 0px; border: none;}
+.panel-group .panel+.panel {margin-top: 5px;}

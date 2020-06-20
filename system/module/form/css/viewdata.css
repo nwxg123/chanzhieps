@@ -1,0 +1,21 @@
+.items .item {padding: 10px; border-bottom: none;}
+.items .item .item-heading .required:after {top: 0px; margin-left: 10px;}
+.items .item .item-content {padding: 0 10px 0 10px;}
+.items .item .item-content .panel {margin-bottom: 0px;}
+.items .item .item-content .radio:first-child {margin-top: 0;} 
+.items .item .item-content .checkbox:first-child {margin-top: 0;} 
+.items .item .item-content .radio:last-child {margin-bottom: 0;} 
+.items .item .item-content .checkbox:last-child {margin-bottom: 0;} 
+
+img {width: 80px; height: 80px; margin-right: 20px;}
+
+.userAnswer {border: 2px solid #38b03c; width: 122px !important;}
+
+span.answer {margin-right: 5px;}
+span.answer.label-success {background-color: #229f24;}
+
+.file-icon {opacity: 1 !important;}
+.file-list .file .file-answer {position: absolute; top: 160px; width: 122px;}
+.file-content .file-name .radio {margin-top: 10px !important;}
+.file-content .file-name .checkbox {margin-top: 10px !important;}
+.btn-toolbar {margin-bottom:10px}

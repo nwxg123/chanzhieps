@@ -1,0 +1,7 @@
+#setModuleForm {padding:30px}
+.check-card {width:170px;height:72px;border:1px solid #ddd;margin:0px 10px 10px 0px;text-align:center;position:relative}
+.check-card:hover {-webkit-box-shadow: 0 2px 10px #BEBEBE;}
+.check-card.checked:before{content:'\f00c';font-family:'ChangerPressIcon';font-size:12px;text-align:right;color:#fff;position:absolute;width:28px;height:28px;right:0px;top:0px;z-index:2;padding-right:2px}
+.check-card.checked:after{content:' ';position:absolute;border-color:#22D3B6 #22D3B6 transparent transparent;border-width:14px 14px 14px 14px;border-style:solid;right:0px;top:0px;z-index:1}
+.card-title {margin-top:15px}
+.card-desc {font-size:12px;color:#999;margin-top:5px}

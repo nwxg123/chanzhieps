@@ -1,0 +1,12 @@
+.main-table table {margin-bottom:0px}
+.table th.first {padding:0px}
+.table th.actions {font-size:12px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}
+.main-table table .uname {font-size:12px}
+.main-table table .uname .icon {font-size:12px;margin-right:5px}
+.main-table table .gray {color:#999;margin:0px 10px}
+.main-table table .title {color:#666;margin-left:20px}
+.main-table table .title a{color:#151515;text-decoration:underline}
+.main-table table .content {width: 95%;white-space: normal;height: 40px;overflow-y: auto;margin-top:5px;padding-right:10px}
+.main-table table tbody .checkbox-primary {margin-top:20px}
+.main-table table tbody .c-actions {padding-top:10px}

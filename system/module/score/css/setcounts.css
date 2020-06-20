@@ -1,0 +1,4 @@
+.panel {background:transparent;border:1px solid #ddd;}
+.table-form > tbody > tr > th {width:140px}
+.table td, .table th {vertical-align:middle}
+.table th {text-align:right}

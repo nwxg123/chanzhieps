@@ -1,0 +1,41 @@
+.article {margin-bottom: 10px;}
+
+.items .item {padding: 10px 10px 0 10px; border-bottom: none;}
+.items .item .item-heading .required:after {top: 0px; margin-left: 10px;}
+.items .item .item-content {padding: 0 10px 0 10px;}
+.items .item .item-content .radio:first-child {margin-top: 0;} 
+.items .item .item-content .checkbox:first-child {margin-top: 0;} 
+.items .item .item-content .radio:last-child {margin-bottom: 0;} 
+.items .item .item-content .checkbox:last-child {margin-bottom: 0;} 
+
+.file-list {margin-bottom: 0 !important;}
+.file-icon {opacity: 1 !important;}
+.file-content .file-name div {word-wrap: break-word; overflow: hidden;}
+.file-content .file-name .radio {margin-top: 10px !important;}
+.file-content .file-name .checkbox {margin-top: 10px !important;}
+
+.progressbar {opacity: 0;}
+.progressbar.show {opacity: 1;}
+.progressbar .percent {height: 20px;}
+
+.progress {
+  height: 20px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-radius: 4px;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: #3280fc;
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.pager {padding-left: 10px; padding-right: 10px;}

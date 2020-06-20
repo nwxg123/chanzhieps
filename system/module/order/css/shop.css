@@ -1,0 +1,27 @@
+a.product{color: #333;}
+a.product:hover{color: #333;}
+.fixedTheadOfList { position: fixed; top: 41px; z-index: 1000; background-color:#FFFFFF;}
+.chosen-container-single .chosen-single {background-color:#fff}
+
+#state {border-radius:4px;width:110px;padding:0px 0px 0px 8px;background-color:#fff}
+.main-table > .table > thead {border-bottom:unset}
+.main-table > .table > tbody > tr.order-title {background-color:#ECEBF7;color:#000000} 
+.main-table > .table > tbody > tr.order-goods {height:100px} 
+.main-table > .table > tbody > tr.order-goods.closed {display:none} 
+.main-table > .table > tbody > tr.order-goods > td > .goods-title {white-space:normal;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;} 
+.main-table > .table > tbody > tr.order-goods > td > .goods-category {margin-top:20px} 
+.main-table > .table > tbody > tr.order-goods > td > .media-placeholder {float:left;margin:0px 10px;width:80px;height:80px;display: inline-block;line-height:80px;font-size:12px;vertical-align:middle;padding:0px;overflow:hidden} 
+.main-table > .table > tbody > tr.order-goods > td > .btn {background-color:transparent} 
+.main-table > .table > tbody > tr.order-goods > td > .btn:hover {background-color:#fff} 
+.main-table > .table > tbody > tr.order-space {height:12px} 
+.main-table > .table > tbody > tr.order-space > td {height:12px;line-height:12px;padding:0px} 
+.main-table > .table > tbody > tr.goods-bar {height:16px} 
+.main-table > .table > tbody > tr.goods-bar > td {height:16px;line-height:16px;padding:0px;cursor:pointer} 
+.main-table > .table > tbody > tr.goods-bar > td:hover {background-color:#ECEBF7} 
+.main-table > .table > tbody > tr.order-goods .strong {font-weight:600} 
+.main-table > .table > tbody > tr.order-goods .amount {font-size:20px;padding-bottom:10px} 
+.main-table > .table > tbody > tr.order-goods > td.rowspan {vertical-align:unset;border:1px solid #ddd;white-space:unset;padding-top:20px} 
+.main-table > .table > tbody > tr.order-goods > td.rowspan > a.btn {padding:5px 20px;margin:5px 5px} 
+
+.file-image {width:82px;height:82px;line-height:80px;border:1px solid #e3e5ea;float:left;text-align:center;margin:0px 10px}
+.file-image > .image-small {height:100%;width:auto;max-width:100%}

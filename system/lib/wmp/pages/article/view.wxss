@@ -1,0 +1,5 @@
+/* pages/article/view.wxss */
+@import "../message/comment.wxss"
+.content rich-text{
+    line-height: 1.5rem;
+}

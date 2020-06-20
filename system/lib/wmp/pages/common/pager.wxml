@@ -1,0 +1,15 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<template name="pager">
+  <view class="footer has-padding">
+    <view class="fluid flex space-between">
+      <navigator wx:if="{{pager.pageID > 1}}" class='btn outline' open-type='redirect' url="{{helper.pager.getPrevLink(url, pager.pageID)}}">
+        <text space="nbsp"><text class="icon icon-arrow-left"></text> 上一页</text>
+      </navigator>
+      <text wx:if="{{pager.pageID == 1}}" class='btn outline disabled'><text class="icon icon-arrow-left"></text> 上一页</text>
+      <navigator data-origin="{{url}}" wx:if="{{pager.pageID < pager.pageTotal}}" class='btn outline' open-type='redirect' url="{{helper.pager.getNextLink(url, pager.pageID)}}">
+        <text space="nbsp">下一页 <text class="icon icon-arrow-right"></text></text>
+      </navigator>
+      <text wx:if="{{pager.pageID == pager.pageTotal}}" class='btn outline disabled'>下一页 <text class="icon icon-arrow-right"></text></text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+.panel {background-color: transparent;}
+.panel .panel-heading {padding: 0;}
+.panel .panel-heading .breadcrumb {padding: 0;}
+.panel .panel-body form {max-width: 100%;}
+.panel .panel-body form .title-wrapper {display: flex; display: -webkit-flex;}
+.panel .panel-body form .title-wrapper span {display: flex; display: -webkit-flex; align-items: center; justify-content: center;}
+.panel .panel-body form .datetime-picker th.draft-selected, .panel .panel-body form .datetime-picker input.draft-selected {color: #999999;}
+.panel .panel-body form .datetime-picker .input-control {width: 36%; display: inline-block}
+.panel .panel-body form .datetime-picker .help-inline {display: inline-block; margin-left: 10px; color: #999999;}
+
+#order {width: 100px; border-left: 0;}
+#author {width: 50%;}
+#title, #keywords, #summary {width: 100%;}

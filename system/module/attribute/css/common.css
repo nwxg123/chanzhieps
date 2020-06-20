@@ -1,0 +1,10 @@
+span.input-group-addon{cursor:pointer;}
+.value-group > .input-group{margin:5px 0;}
+td > .form-group {margin-bottom: 10px;}
+td > .form-group:last-child {margin-bottom: 0;}
+td > .form-group.row .btn {position: relative; margin-top: 5px; display: block; float: left;}
+
+.table th.actions {font-size:12px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}
+
+.panel {background:transparent;border:1px solid #ddd;}

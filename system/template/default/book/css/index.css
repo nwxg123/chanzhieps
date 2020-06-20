@@ -1,0 +1,7 @@
+.row{margin:10px 0px 0px 0px}
+.card{position: relative; height: 100px; margin-bottom: 10px;}
+.card .card-heading {font-size: 15px; white-space: nowrap; display: block; width: 100%;padding:10px 25px;text-overflow:ellipsis;overflow:hidden;}
+.card .card-heading a{vertical-align: middle;color:#333}
+.card .card-content{height: 40px;padding:0 25px 0 10px}
+.card-actions{position: absolute; bottom:5px; right: 5px;}
+.card i {float: left; padding-left: 25px; font-size: 40px; color: #145ccd;}

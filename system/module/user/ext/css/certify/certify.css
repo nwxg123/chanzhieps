@@ -1,0 +1,14 @@
+#certifyTable {border:none;}
+#certifyTable tr:first-child td, #certifyTable tr:first-child th{border-top:none;}
+#certifyTable tr th:first-child, #certifyTable tr td:first-child{border-left:none;}
+#certifyTable tr th:last-child,  #certifyTable tr td:last-child{border-right:none;}
+#certifyTable tr:last-child td,  #certifyTable tr:last-child th{border-bottom:none;}
+#certifyTable th, #certifyTable td{padding: 10px 8px;}
+
+.td-card .box{border: 1px solid #DDD; text-align:center; width:320px; height:180px; padding:0px;}
+.td-card .card{text-align:center; padding-top:40px; border:none;margin:0px; height:100%;}
+.td-card .text-lg{line-height:90px;}
+
+.td-business .box{border: 1px solid #DDD; text-align:center; width:297px; height:420px; padding:0px;}
+.td-business .card{text-align:center; padding-top:60px; border:none;margin:0px; height:100%;}
+.td-business .text-lg{line-height:90px;}

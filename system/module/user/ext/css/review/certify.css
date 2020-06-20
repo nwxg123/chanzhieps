@@ -1,0 +1,8 @@
+.table th.actions {font-size:12px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}
+
+#bodySidebar {position:fixed;left:94px;z-index:10;width:140px;max-height:-webkit-calc(100% - 102px);max-height:calc(100% - 102px);padding-right:10px;padding-bottom:20px;overflow:auto;background-color:#f5f5f5;}
+#bodySidebar .nav {margin-bottom:20px}
+#bodySidebar .nav > li > a {padding:8px 0;font-size:16px}
+#bodySidebar .nav > li.active > a {color:#7580ff}
+#bodySidebar+#bodyContent {margin-left:150px}

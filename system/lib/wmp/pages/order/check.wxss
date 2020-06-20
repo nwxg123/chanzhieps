@@ -1,0 +1,7 @@
+/* pages/order/confirm.wxss */
+.panel-body .bg-gray-pale {background-color: #fff;padding: 8px 0px;}
+.footer-right {width: 100%;text-align: center;padding-top:12px}
+.footer-right > .right-btn {width: 84px;float: right;margin-right: 12px;}
+.footer-right > .right-btn > .btn {width:100%}
+.footer-right > .right-btn > .btn-order-submit {border: 1px solid #6F9AFE;color: #fff;background: linear-gradient(to right,#709BFE,#1B5AFF);}
+.footer-right > .right-btn > .btn-order-manage {border: 1px solid #6F9AFE;color: #6F9AFE;background-color: #fff;padding: 0px;line-height: 28px;}

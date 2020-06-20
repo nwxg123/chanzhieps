@@ -1,0 +1,44 @@
+<wxs src="../common/helper.wxs" module="helper" />
+
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+
+  <!-- 视频详情顶部布局 -->
+  <view class="layout layout-top">
+    <template wx:if="{{layouts.video_view && layouts.video_view.top}}" is="layout" data="{{blocks: layouts.video_view.top, config: config}}" />
+  </view>
+
+  <view class="video">
+      <view class="detail">
+        <video style="{{data.video.style}}" poster="{{helper.printFileURL(data.video.image.primary, config)}}" custom-cache="{{false}}" title="{{data.video.title}}" src="{{data.video.src}}" id="video{{data.video.id}}" data-videoid="{{data.video.id}}" data-videosrc="{{data.video.processedWmpLink}}" bindtap="playVideo" bindplay="bindPlay" bindpause="bindPause"></video>
+      </view>
+      <view class="title-group">
+        <image wx:if="{{data.video.sticky != 0}}" src="./image/top.png" class="icon"></image>
+        <text class="title">{{data.video.title}}</text>
+      </view>
+      <view class="ext">
+        <view class="left">
+          <text class="avatar icon icon-1x icon-user"></text>
+          <view class="edit-info">
+            <view class="author">{{data.video.author}}</view>
+            <view class="addedDate">{{data.video.addedDate}}</view>
+          </view>
+        </view>
+        <view class="right">
+          <view wx:if="{{data.video.source !== 'original' && data.video.copyURL}}" class="source">转自：{{data.video.copySite}} </view>
+          <view wx:else class="source">原创</view>
+          <view class="play-amount">
+            <image class="icon" src="./image/play-amount.png"></image>
+            <text class="amount">{{data.video.views}}</text>
+          </view>
+        </view>
+      </view>
+  </view>
+
+  <!-- 视频底部布局 -->
+  <view class="layout layout-bottom">
+    <template wx:if="{{layouts.video_view && layouts.video_view.bottom}}" is="layout" data="{{blocks: layouts.video_view.bottom, config: config}}" />
+  </view>
+
+  <!-- 导入公共 footer -->
+  <include src="../common/footer.wxml" />
+</view>

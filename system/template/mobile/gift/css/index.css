@@ -1,0 +1,4 @@
+.card .card-content{height: 30px;}
+.card .card-heading{font-size:15px; font-weight:600}
+.giftList .card > a > img{height:200px;}
+.giftList .card {text-align:center}

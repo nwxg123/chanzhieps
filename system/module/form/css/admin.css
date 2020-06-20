@@ -1,0 +1,4 @@
+.dropdown-menu{min-width: 90px;}
+.dropdown-menu > li > a[disabled] {color: #aaa; text-decoration: none; cursor: default;}
+.table th.actions {font-size:12px}
+.main-table > .table > tbody > tr > td.c-actions, .main-table > .table > thead > tr th.actions {padding:2px 0px}

@@ -1,0 +1,36 @@
+<view class="msger bottom {{msgClass}}"><view class="msger-content">{{msgInfo}}</view><view class="msger-actions"><button type="button" bindtap="closeMsg" class="close action"></button></view></view>
+<view id="footer">
+  <import src="../block/layout.tpl.wxml" />
+  <template wx:if="{{layouts.all && layouts.all.bottom}}" is="layout" data="{{blocks: layouts.all.bottom, grid: false}}" />
+  <view class="center-content has-padding muted">
+    <text space="nbsp" class="small">Powered by <text class="icon icon-chanzhi"></text></text>
+  </view>
+</view>
+<view class="appbar fix-bottom">
+  <view class="nav nav-icons">
+    <view class="li">
+      <navigator class="item" url="/pages/index/index" role="navigation">
+        <icon class="img-icon" type="search" size="18"></icon>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator class="item" url="/pages/index/index" role="navigation">
+        <icon class="img-icon" type="search" size="18"></icon>
+        <text>消息</text>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator class="item" url="/pages/index/index" role="navigation">
+        <icon class="img-icon" type="search" size="18"></icon>
+        <text>购物车</text>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator open-tyoe="navigate" url="/pages/user/control" role="navigation">
+        <icon class="img-icon" type="search" size="18"></icon>
+        <text>用户中心</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+body {padding-bottom: 30px}
+#main {padding: 10px 20px 0 20px}
+#main .page-header {margin: 0px 0 10px 0px}
+
+#dashboard > .row {min-width: 1176px;}
+#dashboard .col-main {width: 75%}
+#dashboard .col-side {width: 25%}
+#dashboard .panel-body.has-table {padding-top: 0;}
+#dashboard .panel-move-handler {position: absolute; top: 0; left: 0; right: 50px; height: 40px; z-index: 10; cursor: move;}
+#dashboard.sortable-sorting .panel {margin-bottom: 10px; box-shadow: 0 1px 1px rgba(0,0,0,.075), 0 2px 6px 0 rgba(0,0,0,.075); height: 46px;}
+#dashboard.sortable-sorting .panel > * {display: none;}
+#dashboard.sortable-sorting .panel:before {display: block; content: attr(data-name); padding: 12px 20px; font-weight: bold; font-size: 14px; color: #3c4353; opacity: 1!important; text-align: left; visibility: visible;}
+#dashboard.sortable-sorting .panel.dragging {visibility: visible; background: transparent; background: rgba(0,0,0,.075); box-shadow: inset 0 2px 6px rgba(0,0,0,.075);}
+#dashboard.sortable-sorting .panel.dragging:before {color: #bbb;}
+#dashboard.sortable-sorting .panel.drag-shadow {box-shadow: 0 1px 3px rgba(0,0,0,.175), 0 3px 8px 0 rgba(0,0,0,.175)}
+
+#dashboard .block-sm .hide-in-sm {display: none;}
+
+#noticeBox{ width:380px; position:fixed; bottom:25px; right:15px; z-index: 9999; }
+
+.widget-9 {width:100%; float:left}
+.widget-8 {width:79%; float:left}
+.widget-7 {width:69%; float:left}
+.widget-6 {width:49%; float:right}
+.widget-5 {width:49%; float:left}
+.widget-3 {width:29%; float:right}
+.widget-2 {width:19%; float:right}
+.widget-1 {width:9%; float:right}
+.widget-process, .widget-stat {overflow:hidden}
+.widget-operationLog {height:483px;overflow:hidden}
+.widget-chanzhiDynamic {height:312px;overflow:hidden}
+.widget-untreatedList, .widget-trendMap {height:312px;overflow:hidden}
+#chanzhiDynamic {padding:1px 20px;margin-bottom:20px}
+#chanzhiDynamic .w-70px {font-size:12px;color:#999}
+#chanzhiDynamic a {color:#333}
+.table-data td, .table-data th {padding:6px}
+
+.panel-widget {box-shadow : 0 1px 1px rgba(0,0,0,.05), 0 2px 6px 0 rgba(0,0,0,.045)}
+
+.page-header .heading h1 {font-size:20px}
+.page-header .actions > .btn > .icon {font-size:14px;color:#999999}
+
+.col-side > .panel-widget {float:left;width:100%}

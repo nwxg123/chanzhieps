@@ -1,0 +1,11 @@
+.wechatpay-item .input-group, .alipay-item .input-group{margin-top:4px;}
+.table-form > tbody > tr > th {width:150px}
+.table.table-form th, .table.table-form td {padding:8px}
+.alipay-item > td,.wechatpay-item >td {position:relative}
+.alipay-item > td:before,.wechatpay-item > td:before {content:'';margin-top:25px;width:8px;border:1px solid #CECECE;border-right:unset;position:absolute;left:0px;top:0px}
+.alipay-item > td:before {height:75px}
+.wechatpay-item > td:before {height:145px}
+.payment > td .icon {margin-right:5px}
+.payment > td .icon-wechat   {background:#7BC549;color:#fff;padding:2px}
+.payment > td .icon-delivery {background:#fff;color:#B7ABA5}
+.payment > td .icon-alipay   {background:#fff;color:#16a8f8}

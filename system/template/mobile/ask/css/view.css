@@ -1,0 +1,30 @@
+.btn.primary.active, .btn.primary.focus, .btn.primary:active, .btn.primary:focus, .btn.primary:hover, .open>.dropdown-toggle.btn.primary, .btn.primary.active.focus, .btn.primary.active:focus, .btn.primary.active:hover, .btn.primary:active.focus, .btn.primary:active:focus, .btn.primary:active:hover, .open>.dropdown-toggle.btn.primary.focus, .open>.dropdown-toggle.btn.primary:focus, .open>.dropdown-toggle.btn.primary:hover {background-color: #205EFF;}
+.btn.primary {background: linear-gradient(to right, #709BFE, #205EFF); border-radius: 2px; border: 0;}
+a.primary, a.text-primary {color:#000000}
+a:hover, a:focus{color: #205EFF;}
+.panel-section {margin: 10px 0}
+.panel-heading {padding: 12px !important;}
+.panel-body {padding: 8px 12px !important;}
+.td-content {padding: 8px 12px !important;}
+.table {margin-bottom: 0}
+.question {padding: 16px 12px; background-color: #ffffff;}
+.question .vertical-center {display: flex; display: -webkit-flex; align-items: center;}
+.question .horizontal-center {display: flex; flex-direction: column; justify-content: center;}
+.question .header .title-wrapper {width: 331px; margin: auto}
+.question .header .title-wrapper .title {font-size: 20px; font-weight: bold; word-break: break-all; vertical-align: middle;}
+.question .header .title-wrapper .status {background-color: #E6EDFF; padding: 3px 2px; font-size: 12px; color: #3C77FE; vertical-align: middle;}
+.question .header .sub-title {display: flex; justify-content: space-between;}
+.question .header .sub-title .author {margin-top: 12px;height: 32px;}
+.question .header .sub-title .author img {border-radius: 3px; margin-right: 10px; width: 32px; height: 32px;}
+.question .header .sub-title .author i {border-radius: 3px; margin-right: 10px; font-size: 40px; color: grey;}
+.question .header .sub-title .operations .trigger {display: flex; height: 24px; border-radius: 1px; align-items: center; margin: auto 0; justify-content: center; vertical-align: middle;}
+.question .header .sub-title .operations .trigger.active {background-color: #E6EDFF;}
+.question .header .sub-title .operations .trigger .circle {background-color: #D8D8D8; width: 4px; height: 4px; margin: 0 3px;}
+.question .header .sub-title .operations .trigger.active .circle {background-color: #3C77FE;}
+.question .header .sub-title .operations .options {min-width: 70px;}
+.question .authorName {color: #333333;font-size: 16px;}
+.question .addedDate {color: #999999;font-size: 13px;}
+.question .header .ext {display: flex; flex-direction: column; justify-content: space-between;}
+.question .content {margin-top: 13px; word-break: break-all;}
+.question .footer {margin-top: 13px; color: #999999; font-size: 13px;}
+.modal-trigger {background: rgba(0,0,0,.5);}

@@ -1,0 +1,2 @@
+.article-list .item{padding: 1rem;}
+.summary{padding:0.2rem; font-size:28rpx;}

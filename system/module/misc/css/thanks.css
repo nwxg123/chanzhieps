@@ -1,0 +1,9 @@
+.text-success strong {font-size:24px}
+.card {color: black; min-height: initial; padding-right: 0}
+.row {margin:30px 0px}
+.text-success {color : olivedrab;  margin: 0 0 15px 0;}
+a:hover{color: olivedrab;}
+.text-success{padding: 0 10px 10px;}
+.right-footer{text-align: right;}
+.modal-header{border-bottom: none;}
+.row .row-card {border:1px solid #ddd;width:200px;margin:10px;padding:10px;float:left}

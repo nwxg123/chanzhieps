@@ -1,0 +1,16 @@
+.product-form .panel-heading {background-color:#F9F9F9;} 
+.panel {box-shadow:none; border-color:#EDEDED;}
+.panel-heading {border-bottom:none; color:#333!important;}
+
+.attr {display:inline-block; width:100%;}
+.attr-key {
+  float: left;
+  width: 80px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align:center;
+}
+.attr-value { margin-left: 70px;}
+.attr-value a {margin:0 10px; line-height:25px;}
+.attr-value a.active {font-weight:bold}
+.attr-value img{ max-height: 30px; width: 90px; margin: 5px; }

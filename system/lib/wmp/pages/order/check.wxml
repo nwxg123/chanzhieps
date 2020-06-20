@@ -1,0 +1,34 @@
+<wxs src="../common/helper.wxs" module="helper" />
+<view wx:if="{{!loading}}" class="theme-{{config.theme && config.theme.name}}">
+  <include src="../common/header.wxml" />
+  <form  bindsubmit="buySubmit" class="comment-form" data-module="order" data-method="confirm">
+  
+  <view class="panel-body">
+    <view class="bg-gray-pale"><text class="strong">交易方式</text></view>
+	<view class="order-radio">
+	  <radio class="radio" checked="checked">
+		<text>微信支付</text>
+	  </radio>
+	</view>
+  </view>
+  
+  <view class="msger bottom {{msgClass}}"><view class="msger-content">{{msgInfo}}</view><view class="msger-actions"><button type="button" bindtap="closeMsg" class="close action"></button></view></view>
+  <view id="footer">
+    <import src="../block/layout.tpl.wxml" />
+    <template wx:if="{{layouts.all && layouts.all.bottom}}" is="layout" data="{{blocks: layouts.all.bottom, grid: false}}" />
+    <view class="center-content has-padding muted">
+  	<text space="nbsp" class="small">Powered by <text class="icon icon-chanzhi"></text></text>
+    </view>
+  </view>
+  <view class="appbar fix-bottom">
+  	  <view class="footer-right">
+		<view class="right-btn">
+		  <button class="btn-order-submit btn" bindtap="pay">去结算</button>
+		</view>
+		<view class="right-btn">
+		  <button class="btn-order-manage btn" formType="submit">订单管理</button>
+		</view>
+  	  </view>
+  </view>
+  </form>
+</view>

@@ -1,0 +1,58 @@
+#visualPanel {background-color: #7580FF}
+#visualPanel .nav > li > a.text-danger {color: red}
+
+#visualExitBtn {position: absolute; right: 15px; top: 9px}
+
+#visualPageWrapper {display: block; position: fixed; top: 40px; left: 0; right: 0; bottom: 0;}
+
+#pageLayoutSelector {display: none}
+#pageLayoutSelector > a {color: #fff; padding: 5px 8px!important; margin: 5px; background-color: #F1A325}
+#pageLayoutSelector > a:hover, #pageLayoutSelector > a:active, #pageLayoutSelector > a:focus {color: #fff!important; background-color: #e29923!important}
+#pageLayoutSelector .dropdown-menu > li > a {padding: 8px 15px 8px 15px; position: relative;}
+#pageLayoutSelector .dropdown-menu > li > a:hover,
+#pageLayoutSelector .dropdown-menu > li > a:hover > small {color: #fff}
+#pageLayoutSelector .dropdown-menu > li > a > .icon {position: absolute; right: 10px; top: 19px; display: none; color: #47A447}
+#pageLayoutSelector .dropdown-menu > li > a > small {display: block; margin-top: 2px;}
+#pageLayoutSelector .dropdown-menu > li.active > a {color: #47A447; background-color: #DDF4DF}
+#pageLayoutSelector .dropdown-menu > li.active > a > .icon {display: none}
+#pageLayoutSelector .dropdown-menu > li.active > a > small {color: grey}
+
+.nav-main {margin-left: -10px}
+
+#menu {margin: 0 auto;padding:0px 40px; border-bottom: none; height: auto;}
+#menu .nav > li {padding: 0}
+#menu .nav > li > a {padding: 10px;color:#fff}
+#menu .nav>li>a:focus, #menu .nav>li>a:hover {background-color:transparent;color:#fff}
+#menu > .pull-right {margin-right: 0;}
+#menu .nav > li.nav-item-primary, #menu .nav > li.divider.angle {background-color: transparent}
+#menu .nav > li.divider {height:16px;margin:12px 4px}
+#menu .nav > li.nav-right {margin-top:10px}
+#menu .nav > li.nav-right > i {color:#9099FF}
+#menu .nav > li > a.dropdown-toggle > i {color:#7580FF;background-color:#fff;height:14px;width:14px;margin-left:8px;border-radius:2px}
+#customThemeBtn > i {font-size:18px}
+#visualPageName > i {font-size:18px}
+#menu .nav.pull-right > li > a > i {color:#7580FF;background-color:#fff;height:14px;width:14px;margin-right:8px;border-radius:2px}
+#menu .nav-item-primary .dropdown-menu {min-height:100px}
+#menu .nav-item-primary .dropdown-menu>li>a>.icon-check {display: block;position: absolute;left: 33px;top: 16px;color: #fff;font-size:14px;height:14px;width:14px;line-height:14px}
+#menu .nav-item-primary .dropdown-menu>li.active>a>.icon-check {color: green}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {background-color:#7580FF;color:#fff}
+
+#menu .menu-templates {display: none}
+#menu .menu-template-name, #menu .menu-template-name + .icon {display: none!important}
+#menu .theme-picker-toolbar {background-color: #fff;border-top:1px solid #CECECE}
+#menu .theme-picker-toolbar > .nav {padding:10px}
+#menu .theme-picker-toolbar > .nav > li > a {color: #666;border:1px solid #cecece;border-radius:4px;padding:5px;margin-right:10px}
+#menu .theme-picker-toolbar > .nav.pull-right > li > a {color: #7580FF;border:0px solid #cecece}
+#menu .theme-picker-toolbar > .nav > li > a:hover {color: #666}
+
+#menu .theme{width:160px}
+#menu .theme-img {height:100px}
+#menu .theme.current .theme-card {border-color:#7b71ff;box-shadow:0px 0px 0px}
+#menu .theme-name {font-size:12px;background-color:#fff}
+#menu .theme-picker .theme-name {padding-left:10px;text-align:left}
+#menu .theme.current .theme-card > .icon {border: 14px solid #7b71ff; border-left-color: transparent; border-bottom-color: transparent;}
+#menu .menu-themes {padding-left:15px}
+
+#visualPage {transition: width .2s;}
+.ve-device-mobile {background-color: #aaa}
+.ve-device-mobile #visualPage {width: 600px!important; margin: 0 auto; display: block;}
